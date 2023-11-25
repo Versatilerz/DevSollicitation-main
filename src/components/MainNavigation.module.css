@@ -1,0 +1,36 @@
+.header {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  gap: 4rem;
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 2rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+  border-left: solid white;
+  border-right: solid white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  @media (max-width: 1750px) {
+    color: rgb(193, 7, 7);
+  }
+}
+
+.list a:hover,
+.list a.active {
+  color: rgb(125, 26, 26);
+  text-decoration: underline;
+  @media (max-width: 1750px) {
+    color: white;
+  }
+}

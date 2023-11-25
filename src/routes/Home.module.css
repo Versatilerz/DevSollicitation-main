@@ -1,0 +1,38 @@
+.wrapper {
+  width: 90%;
+  margin: 1rem auto 0;
+  display: flex;
+}
+
+.h1 {
+  color: #fff;
+  font-size: 5em;
+  /* text-align: center; */
+}
+
+.span {
+  background-image: url("../UI/Images/flames2.jpg");
+  background-clip: text;
+  animation: fire 30s linear infinite;
+  backface-visibility: hidden;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: fire 25s linear infinite;
+  -webkit-backface-visibility: hidden;
+  font-style: italic;
+  scale: (-1, 1);
+}
+
+@keyframes fire {
+  0% {
+    background-position: 0%, -50%;
+  }
+  0% {
+    background-position: 100%, -50%;
+  }
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+}
